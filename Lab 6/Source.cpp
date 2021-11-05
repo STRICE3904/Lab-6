@@ -9,19 +9,19 @@ void File_Check(ifstream& inFile);
 //Post: The function will verify the state of the input file when it is first opened 
 
 void remove_bad_zeros(ifstream& inFile, char& input, int& position);
-//Pre: The input cursor has encountered a 0 in the first position of the input file
-//Post: The function move the input cursor forward to the first significant digit (i.e. 1) or detect an error in the input stream.
+//Pre: The input cursor has found a 0 in the first position of the input file
+//Post: The function moves the input cursor forward to the first significant digit (i.e. 1) or detect an error in the input stream.
 
 void Chart_Output(int total, string binaryNum);
-//Pre: The main function has successfully read in a series of binary numbers, stored them to a string called binaryNum and converted the binary to a decimal number
-//Post: The function will output a table with the binary number that has been read in with its decimal equivalent
+//Pre: The main function found no errors and was able to convert to binnary
+//Post: The function will output a table with the binary number and its decimal value
 
 void AddToTotal(int& total, char input, int& position, string& binaryNum);
-//Pre: The input stream has read a character from the input file that is either a '1' or a '0'.
+//Pre: The stream has found a character from the input file that is either a '1' or a '0'.
 //Post: The function updates the location of the decimal total for the conversion from binary to decimal.
 
 int DecimalPlaceValue(int total);
-//Pre: The main function has successfully calculated a decimal number called total which is passed to the function by value
+//Pre: The main function has successfully calculated a decimal number, called total, which is passed to the function by value
 //Post: Function returns the number of place values in the decimal number
 
 void Reset_Variables(int& total, int& position, string& binaryNum);
