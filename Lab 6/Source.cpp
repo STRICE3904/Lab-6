@@ -32,7 +32,7 @@ int main()
 {
 	ifstream inFile;
 
-	cout << setw(21) << "Binary Number" << setw(19) << "Decimal Value" << endl; //Header for chart
+	cout << setw(21) << "Binary Number" << setw(24) << "Decimal Equivalent" << endl; //Header for chart
 
 	File_Check(inFile);
 
